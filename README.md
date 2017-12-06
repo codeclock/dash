@@ -1,4 +1,4 @@
-SMC Core staging tree 0.12.1
+SC Core staging tree 0.12.1
 ===============================
 
 `master:` [![Build Status](https://travis-ci.org/codeclock/smc.svg?branch=master)](https://travis-ci.org/codeclock/smc) `v0.12.0.x:` [![Build Status](https://travis-ci.org/codeclock/smc.svg?branch=v0.12.0.x)](https://travis-ci.org/codeclock/smc/branches) `v0.12.1.x:` [![Build Status](https://travis-ci.org/codeclock/smc.svg?branch=v0.12.1.x)](https://travis-ci.org/codeclock/smc/branches)
@@ -6,31 +6,31 @@ SMC Core staging tree 0.12.1
 (Link to Website)
 
 
-What is SMC?
+What is SC?
 ----------------
 
-SMC is an experimental new digital currency that enables anonymous, instant
-payments to anyone, anywhere in the world. SMC uses peer-to-peer technology
+SC is an experimental new digital currency that enables anonymous, instant
+payments to anyone, anywhere in the world. SC uses peer-to-peer technology
 to operate with no central authority: managing transactions and issuing money
-are carried out collectively by the network. SMC Core is the name of the open
+are carried out collectively by the network. SC Core is the name of the open
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the SMC Core software, see (Link to Website).
+the SC Core software, see (Link to Website).
 
 
 License
 -------
 
-SMC Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+SC Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
 -------------------
 
 The `master` branch is meant to be stable. Development is normally done in separate branches.
-[Tags](https://github.com/codeclock/smc/tags) are created to indicate new official,
-stable release versions of SMC Core.
+[Tags](https://github.com/codeclock/SC/tags) are created to indicate new official,
+stable release versions of SC Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
