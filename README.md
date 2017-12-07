@@ -3,7 +3,7 @@ SC Core staging tree 0.12.1
 
 `master:` [![Build Status](https://travis-ci.org/codeclock/smc.svg?branch=master)](https://travis-ci.org/codeclock/smc) `v0.12.0.x:` [![Build Status](https://travis-ci.org/codeclock/smc.svg?branch=v0.12.0.x)](https://travis-ci.org/codeclock/smc/branches) `v0.12.1.x:` [![Build Status](https://travis-ci.org/codeclock/smc.svg?branch=v0.12.1.x)](https://travis-ci.org/codeclock/smc/branches)
 
-(Link to Website)
+http://www.suppocoin.io/
 
 
 What is SC?
