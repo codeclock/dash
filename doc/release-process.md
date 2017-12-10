@@ -10,14 +10,14 @@ Release Process
 Check out the source code in the following directory hierarchy.
 
 	cd /path/to/your/toplevel/build
-	git clone https://github.com/dashpay/gitian.sigs.git
+	git clone https://github.com/codeclock/gitian.sigs.git
 	git clone https://github.com/codeclock/sc-detached-sigs.git
 	git clone https://github.com/devrandom/gitian-builder.git
 	git clone https://github.com/codeclock/sc.git
 
 ### Suppo Core maintainers/release engineers, update (commit) version in sources
 
-	pushd ./dash
+	pushd ./suppo
 	contrib/verifysfbinaries/verify.sh
 	configure.ac
 	doc/README*
@@ -188,13 +188,9 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
 - Announce the release:
 
-  - Release on Dash forum: https://www.suppocoin.io/forum/topic/official-announcements.54/
+  - Release on Suppocoin forum: https://www.suppocoin.io/forum/topic/official-announcements.54/
 
-  - Dash-development mailing list
-
-  - Update title of #dashpay on Freenode IRC
-
-  - Optionally reddit /r/Dashpay, ... but this will usually sort out itself
+  - Suppocoin-development mailing list
 
 - Notify flare so that he can start building [the PPAs](https://launchpad.net/~suppocoin.io/+archive/ubuntu/dash)
 

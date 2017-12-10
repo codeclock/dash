@@ -54,8 +54,8 @@ static int AppInitRawTx(int argc, char* argv[])
         // First part of help message is specific to this utility
         std::string strUsage = _("Suppo Core suppo-tx utility version") + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  dash-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded dash transaction") + "\n" +
-              "  dash-tx [options] -create [commands]   " + _("Create hex-encoded dash transaction") + "\n" +
+              "  suppo-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded Suppocoin transaction") + "\n" +
+              "  suppo-tx [options] -create [commands]   " + _("Create hex-encoded Suppocoin transaction") + "\n" +
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

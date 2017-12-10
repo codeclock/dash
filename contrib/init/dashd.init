@@ -1,36 +1,36 @@
 #!/bin/bash
 #
-#  dashd The Suppo Core server.
+#  suppod The Suppo Core server.
 #
 #
 # chkconfig: 345 80 20
-# description: dashd
-# processname: dashd
+# description: suppod
+# processname: suppod
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/dashd, see below
-if [ -f /etc/sysconfig/dashd ]; then
-        . /etc/sysconfig/dashd
+# you can override defaults in /etc/sysconfig/suppod, see below
+if [ -f /etc/sysconfig/suppod ]; then
+        . /etc/sysconfig/suppod
 fi
 
 RETVAL=0
 
-prog=dashd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/dashd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/dashd}
+prog=suppod
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/suppod
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/suppod}
 
-# dashd defaults to /usr/bin/dashd, override with BITCOIND_BIN
-dashd=${BITCOIND_BIN-/usr/bin/dashd}
+# suppod defaults to /usr/bin/suppod, override with BITCOIND_BIN
+suppod=${BITCOIND_BIN-/usr/bin/suppod}
 
-# dashd opts default to -disablewallet, override with BITCOIND_OPTS
-dashd_opts=${BITCOIND_OPTS--disablewallet}
+# suppod opts default to -disablewallet, override with BITCOIND_OPTS
+suppod_opts=${BITCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $dashd $dashd_opts
+    daemon $DAEMONOPTS $suppod $suppod_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

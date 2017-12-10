@@ -63,7 +63,7 @@ for arg in sys.argv[1:]:
 #Set env vars
 buildDir = BUILDDIR
 if "DASHD" not in os.environ:
-    os.environ["DASHD"] = buildDir + '/src/dashd' + EXEEXT
+    os.environ["DASHD"] = buildDir + '/src/suppod' + EXEEXT
 if "DASHCLI" not in os.environ:
     os.environ["DASHCLI"] = buildDir + '/src/dash-cli' + EXEEXT
 

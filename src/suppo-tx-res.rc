@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Suppoman"
-            VALUE "FileDescription",    "suppod (Suppocoin node with a JSON-RPC server)"
+            VALUE "FileDescription",    "suppo-tx (CLI Suppocoin transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "suppod"
+            VALUE "InternalName",       "suppo-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "suppod.exe"
-            VALUE "ProductName",        "suppod"
+            VALUE "OriginalFilename",   "suppo-tx.exe"
+            VALUE "ProductName",        "suppo-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

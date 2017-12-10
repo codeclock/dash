@@ -1,8 +1,8 @@
-0.0.1 Release notes
+0.0.2 Release notes
 ====================
 
 
-Suppo Core version 0.0.1 is now available from:
+Suppo Core version 0.0.2 is now available from:
 
   https://suppocoin.io/downloads
 

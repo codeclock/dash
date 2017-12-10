@@ -1,33 +1,33 @@
 Suppo Core 0.0.1
 =====================
 
-This is the official reference wallet for Dash digital currency and comprises the backbone of the Dash peer-to-peer network. You can [download Suppo Core](https://www.suppocoin.io/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for Suppocoin digital currency and comprises the backbone of the Suppocoin peer-to-peer network. You can [download Suppo Core](https://www.suppocoin.io/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Dash on your native platform.
+The following are some helpful notes on how to run Suppocoin on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/dash-qt` (GUI) or
-- `bin/dashd` (headless)
+- `bin/suppo-qt` (GUI) or
+- `bin/suppod` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run dash-qt.exe.
+Unpack the files into a directory, and then run suppo-qt.exe.
 
 ### OS X
 
-Drag Dash-Qt to your applications folder, and then run Dash-Qt.
+Drag Suppo-Qt to your applications folder, and then run Suppo-Qt.
 
 ### Need Help?
 
-* See the [Dash documentation](https://dashpay.atlassian.net/wiki/display/DOC)
+* See the [Suppocoin documentation](https://dashpay.atlassian.net/wiki/display/DOC)
 for help and more information.
 * Ask for help on [#dashpay](http://webchat.freenode.net?channels=dashpay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=dashpay).
-* Ask for help on the [DashTalk](https://dashtalk.org/) forums.
+* Ask for help on the [SuppocoinTalk](https://dashtalk.org/) forums.
 
 Building
 ---------------------
@@ -57,7 +57,7 @@ The Suppo Core repo's [root README](/README.md) contains relevant information on
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [DashTalk](https://dashtalk.org/) forums, in the Development & Technical Discussion board.
+* Discuss on the [SuppocoinTalk](https://dashtalk.org/) forums, in the Development & Technical Discussion board.
 * Discuss on [#dashpay](http://webchat.freenode.net/?channels=dashpay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=dashpay).
 
 ### Miscellaneous

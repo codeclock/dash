@@ -219,7 +219,7 @@ extern const char *REJECT;
  */
 extern const char *SENDHEADERS;
 
-// Dash message types
+// Suppocoin message types
 // NOTE: do NOT declare non-implmented here, we don't want them to be exposed to the outside
 // TODO: add description
 extern const char *TXLOCKREQUEST;
@@ -345,7 +345,7 @@ enum {
     // Nodes may always request a MSG_FILTERED_BLOCK in a getdata, however,
     // MSG_FILTERED_BLOCK should not appear in any invs except as a part of getdata.
     MSG_FILTERED_BLOCK,
-    // Dash message types
+    // Suppocoin message types
     // NOTE: declare non-implmented here, we must keep this enum consistent and backwards compatible
     MSG_TXLOCK_REQUEST,
     MSG_TXLOCK_VOTE,
