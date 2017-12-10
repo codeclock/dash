@@ -1,7 +1,7 @@
 Gitian building
 ================
 
-*Setup instructions for a Gitian build of Dash Core using a Debian VM or physical system.*
+*Setup instructions for a Gitian build of Suppo Core using a Debian VM or physical system.*
 
 Gitian is the deterministic build process that is used to build the Dash
 Core executables. It provides a way to be reasonably sure that the
@@ -11,7 +11,7 @@ the same, tested dependencies are used and statically built into the executable.
 Multiple developers build the source code by following a specific descriptor
 ("recipe"), cryptographically sign the result, and upload the resulting signature.
 These results are compared and only if they match, the build is accepted and uploaded
-to dash.org.
+to suppocoin.io.
 
 More independent Gitian builders are needed, which is why this guide exists.
 It is preferred you follow these steps yourself instead of using someone else's
@@ -26,7 +26,7 @@ Table of Contents
 - [Installing Gitian](#installing-gitian)
 - [Setting up the Gitian image](#setting-up-the-gitian-image)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building Dash Core](#building-dash-core)
+- [Building Suppo Core](#building-dash-core)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -300,11 +300,11 @@ cd ..
 
 **Note**: When sudo asks for a password, enter the password for the user *debian* not for *root*.
 
-Clone the git repositories for Dash Core and Gitian.
+Clone the git repositories for Suppo Core and Gitian.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/dashpay/dash
+git clone https://github.com/codeclock/sc
 ```
 
 Setting up the Gitian image
@@ -339,16 +339,16 @@ Getting and building the inputs
 --------------------------------
 
 Follow the instructions in [doc/release-process.md](release-process.md#fetch-and-build-inputs-first-time-or-when-dependency-versions-change)
-in the Dash Core repository under 'Fetch and build inputs' to install sources which require
+in the Suppo Core repository under 'Fetch and build inputs' to install sources which require
 manual intervention. Also optionally follow the next step: 'Seed the Gitian sources cache
 and offline git repositories' which will fetch the remaining files required for building
 offline.
 
-Building Dash Core
+Building Suppo Core
 ----------------
 
-To build Dash Core (for Linux, OS X and Windows) just follow the steps under 'perform
-Gitian builds' in [doc/release-process.md](release-process.md#perform-gitian-builds) in the Dash Core repository.
+To build Suppo Core (for Linux, OS X and Windows) just follow the steps under 'perform
+Gitian builds' in [doc/release-process.md](release-process.md#perform-gitian-builds) in the Suppo Core repository.
 
 This may take some time as it will build all the dependencies needed for each descriptor.
 These dependencies will be cached after a successful build to avoid rebuilding them when possible.
@@ -368,7 +368,7 @@ Output from `gbuild` will look something like
     remote: Total 57959 (delta 0), reused 0 (delta 0), pack-reused 57958
     Receiving objects: 100% (57959/57959), 53.76 MiB | 484.00 KiB/s, done.
     Resolving deltas: 100% (41590/41590), done.
-    From https://github.com/dashpay/dash
+    From https://github.com/codeclock/sc
     ... (new tags, new branch etc)
     --- Building for precise amd64 ---
     Stopping target if it is up
@@ -444,10 +444,10 @@ Then when building, override the remote URLs that gbuild would otherwise pull fr
 ```bash
 
 cd /some/root/path/
-git clone https://github.com/dashpay/dash-detached-sigs.git
+git clone https://github.com/codeclock/sc-detached-sigs.git
 
-BTCPATH=/some/root/path/dash.git
-SIGPATH=/some/root/path/dash-detached-sigs.git
+BTCPATH=/some/root/path/sc.git
+SIGPATH=/some/root/path/sc-detached-sigs.git
 
 ./bin/gbuild --url dash=${BTCPATH},signature=${SIGPATH} ../dash/contrib/gitian-descriptors/gitian-win-signer.yml
 ```

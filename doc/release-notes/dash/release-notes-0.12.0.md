@@ -1,14 +1,14 @@
-0.12.0 Release notes
+0.0.1 Release notes
 ====================
 
 
-Dash Core version 0.12.0 is now available from:
+Suppo Core version 0.0.1 is now available from:
 
-  https://dashpay.io/downloads
+  https://suppocoin.io/downloads
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/dashpay/dash/issues
+  https://github.com/codeclock/sc/issues
 
 
 How to Upgrade
@@ -16,8 +16,8 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Dash-Qt (on Mac) or
-dashd/dash-qt (on Linux).
+installer (on Windows) or just copy over /Applications/Suppo-Qt (on Mac) or
+suppod/Suppo-qt (on Linux).
 
 **This new version uses transaction indexing by default, you will need to reindex 
 the blockchain. To do so, start the client with --reindex.**
@@ -28,7 +28,7 @@ Downgrade warning
 
 Because release 0.12.0 and later makes use of headers-first synchronization and
 parallel block download (see further), the block files and databases are not
-backwards-compatible with pre-0.12 versions of Dash Core or other software:
+backwards-compatible with pre-0.12 versions of Suppo Core or other software:
 
 * Blocks will be stored on disk out of order (in the order they are
 received, really), which makes it incompatible with some tools or
