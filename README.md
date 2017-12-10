@@ -1,28 +1,28 @@
-SC Core staging tree 0.12.1
+Suppo Core staging tree 0.12.1
 ===============================
 
-`master:` [![Build Status](https://travis-ci.org/codeclock/smc.svg?branch=master)](https://travis-ci.org/codeclock/smc) `v0.12.0.x:` [![Build Status](https://travis-ci.org/codeclock/smc.svg?branch=v0.12.0.x)](https://travis-ci.org/codeclock/smc/branches) `v0.12.1.x:` [![Build Status](https://travis-ci.org/codeclock/smc.svg?branch=v0.12.1.x)](https://travis-ci.org/codeclock/smc/branches)
+`master:` [![Build Status](https://travis-ci.org/codeclock/sc.svg?branch=master)](https://travis-ci.org/codeclock/sc) `v0.12.0.x:` [![Build Status](https://travis-ci.org/codeclock/sc.svg?branch=v0.12.0.x)](https://travis-ci.org/codeclock/sc/branches) `v0.12.1.x:` [![Build Status](https://travis-ci.org/codeclock/sc.svg?branch=v0.12.1.x)](https://travis-ci.org/codeclock/sc/branches)
 
 http://www.suppocoin.io/
 
 
-What is SC?
+What is Suppocoin?
 ----------------
 
-SC is an experimental new digital currency that enables anonymous, instant
-payments to anyone, anywhere in the world. SC uses peer-to-peer technology
+Suppocoin is an experimental new digital currency that enables anonymous, instant
+payments to anyone, anywhere in the world. Suppocoin uses peer-to-peer technology
 to operate with no central authority: managing transactions and issuing money
-are carried out collectively by the network. SC Core is the name of the open
+are carried out collectively by the network. Suppo Core is the name of the open
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the SC Core software, see (Link to Website).
+the Suppo Core software, see (Link to Website).
 
 
 License
 -------
 
-SC Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Suppo Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
@@ -30,7 +30,7 @@ Development Process
 
 The `master` branch is meant to be stable. Development is normally done in separate branches.
 [Tags](https://github.com/codeclock/SC/tags) are created to indicate new official,
-stable release versions of SC Core.
+stable release versions of Suppo Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
