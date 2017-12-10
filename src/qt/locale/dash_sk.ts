@@ -176,8 +176,8 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DASH&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete vašu peňaženku a stratíte prístupové heslo, potom &lt;b&gt;prídete o všetky svoje DASH-y&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SUPPOCOIN&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete vašu peňaženku a stratíte prístupové heslo, potom &lt;b&gt;prídete o všetky svoje SUPPOCOIN-y&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -853,16 +853,16 @@
         <translation>Použiť 16 rozdielnych masternode</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 DASH to anonymize 1000 SUPPOCOIN</source>
-        <translation>Táto možnosť je najrýchlejšia a bude stáť približne 0.025 DASH pre anonimizáciu 1000 SUPPOCOIN</translation>
+        <source>This option is the quickest and will cost about ~0.025 SUPPOCOIN to anonymize 1000 SUPPOCOIN</source>
+        <translation>Táto možnosť je najrýchlejšia a bude stáť približne 0.025 SUPPOCOIN pre anonimizáciu 1000 SUPPOCOIN</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 DASH to anonymize 1000 SUPPOCOIN</source>
-        <translation>Táto možnosť je stredne rýchla bude stáť približne 0.05 DASH pre anonimizáciu 1000 SUPPOCOIN</translation>
+        <source>This option is moderately fast and will cost about 0.05 SUPPOCOIN to anonymize 1000 SUPPOCOIN</source>
+        <translation>Táto možnosť je stredne rýchla bude stáť približne 0.05 SUPPOCOIN pre anonimizáciu 1000 SUPPOCOIN</translation>
     </message>
     <message>
-        <source>0.1 DASH per 1000 SUPPOCOIN you anonymize.</source>
-        <translation>0.1 DASH za 1000 SUPPOCOIN ktoré spravíte anonymnými.</translation>
+        <source>0.1 SUPPOCOIN per 1000 SUPPOCOIN you anonymize.</source>
+        <translation>0.1 SUPPOCOIN za 1000 SUPPOCOIN ktoré spravíte anonymnými.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1558,8 +1558,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Čiastka a kolá:</translation>
     </message>
     <message>
-        <source>0 DASH / 0 Rounds</source>
-        <translation>0 DASH / 0 Kôl</translation>
+        <source>0 SUPPOCOIN / 0 Rounds</source>
+        <translation>0 SUPPOCOIN / 0 Kôl</translation>
     </message>
     <message>
         <source>Submitted Denom:</source>
@@ -3484,8 +3484,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Poslať Mince</translation>
     </message>
     <message>
-        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 DASH.</source>
-        <translation>InstantSend zatiaľ nepodporuje posielanie takto vysokých čiastok. Transakcie sú limitované na %1 DASH.</translation>
+        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 SUPPOCOIN.</source>
+        <translation>InstantSend zatiaľ nepodporuje posielanie takto vysokých čiastok. Transakcie sú limitované na %1 SUPPOCOIN.</translation>
     </message>
     </context>
 <context>
@@ -4162,8 +4162,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Kľúč KeePassHttp pre šifrovanú AES komunikáciu s KeePass</translation>
     </message>
     <message>
-        <source>Keep N DASH anonymized (default: %u)</source>
-        <translation>Udržiavať N DASH anonymizovaných (predvolené: %u)</translation>
+        <source>Keep N SUPPOCOIN anonymized (default: %u)</source>
+        <translation>Udržiavať N SUPPOCOIN anonymizovaných (predvolené: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -4202,8 +4202,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Pokiaľ &lt;category&gt; nie je nastavená, alebo &lt;category&gt; = 1, vypíš všetky informácie pre ladenie.</translation>
     </message>
     <message>
-        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 DASH.</source>
-        <translation>InstantSend zatiaľ nepodporuje posielanie takto vysokých čiastok. Transakcie sú limitované na %1 DASH.</translation>
+        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 SUPPOCOIN.</source>
+        <translation>InstantSend zatiaľ nepodporuje posielanie takto vysokých čiastok. Transakcie sú limitované na %1 SUPPOCOIN.</translation>
     </message>
     <message>
         <source>InstantSend requires inputs with at least %d confirmations, you might need to wait a few minutes and try again.</source>

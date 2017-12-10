@@ -164,8 +164,8 @@
         <translation>Bekräfta plånbokskryptering</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DASH&lt;/b&gt;!</source>
-        <translation>Varning: Om du krypterar din plånbok och förlorar din lösenfras kommer du att &lt;b&gt;FÖRLORA ALLA DINA DASH&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SUPPOCOIN&lt;/b&gt;!</source>
+        <translation>Varning: Om du krypterar din plånbok och förlorar din lösenfras kommer du att &lt;b&gt;FÖRLORA ALLA DINA SUPPOCOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -770,16 +770,16 @@ Adress: %4
         <translation>Använd 16 enskilda masternoder</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 DASH to anonymize 1000 SUPPOCOIN</source>
-        <translation>Detta alternativ är det snabbaste och kommer att kosta omkring ~0,025 DASH för att anonymisera 1000 SUPPOCOIN</translation>
+        <source>This option is the quickest and will cost about ~0.025 SUPPOCOIN to anonymize 1000 SUPPOCOIN</source>
+        <translation>Detta alternativ är det snabbaste och kommer att kosta omkring ~0,025 SUPPOCOIN för att anonymisera 1000 SUPPOCOIN</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 DASH to anonymize 1000 SUPPOCOIN</source>
-        <translation>Detta alternativ är relativt snabbt och kommer att kosta omkring 0,05 DASH för att anonymisera 1000 SUPPOCOIN</translation>
+        <source>This option is moderately fast and will cost about 0.05 SUPPOCOIN to anonymize 1000 SUPPOCOIN</source>
+        <translation>Detta alternativ är relativt snabbt och kommer att kosta omkring 0,05 SUPPOCOIN för att anonymisera 1000 SUPPOCOIN</translation>
     </message>
     <message>
-        <source>0.1 DASH per 1000 SUPPOCOIN you anonymize.</source>
-        <translation>0,1 DASH per 1000 SUPPOCOIN du anonymiserar.</translation>
+        <source>0.1 SUPPOCOIN per 1000 SUPPOCOIN you anonymize.</source>
+        <translation>0,1 SUPPOCOIN per 1000 SUPPOCOIN du anonymiserar.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1238,8 +1238,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Mängd och omgångar:</translation>
     </message>
     <message>
-        <source>0 DASH / 0 Rounds</source>
-        <translation>0 DASH/0 omgångar</translation>
+        <source>0 SUPPOCOIN / 0 Rounds</source>
+        <translation>0 SUPPOCOIN/0 omgångar</translation>
     </message>
     <message>
         <source>Submitted Denom:</source>
