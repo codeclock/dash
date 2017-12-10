@@ -238,8 +238,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Suppo Core</source>
+        <translation>Suppo Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -298,12 +298,12 @@
         <translation>Ukončiť program</translation>
     </message>
     <message>
-        <source>&amp;About Dash Core</source>
-        <translation>&amp;O Dash Core</translation>
+        <source>&amp;About Suppo Core</source>
+        <translation>&amp;O Suppo Core</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
-        <translation>Zobraziť informácie o Dash Core</translation>
+        <source>Show information about Suppo Core</source>
+        <translation>Zobraziť informácie o Suppo Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -318,8 +318,8 @@
         <translation>&amp;Možnosti...</translation>
     </message>
     <message>
-        <source>Modify configuration options for Dash Core</source>
-        <translation>Upraviť možnosti konfigurácie Dash Core</translation>
+        <source>Modify configuration options for Suppo Core</source>
+        <translation>Upraviť možnosti konfigurácie Suppo Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -502,8 +502,8 @@
         <translation>Lišta záložiek</translation>
     </message>
     <message>
-        <source>Dash Core client</source>
-        <translation>Dash Core klient</translation>
+        <source>Suppo Core client</source>
+        <translation>Suppo Core klient</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Dash network</source>
@@ -966,8 +966,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Suppo Core</source>
+        <translation>Suppo Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -978,8 +978,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Dash Core</source>
-        <translation>O Dash Core</translation>
+        <source>About Suppo Core</source>
+        <translation>O Suppo Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1033,16 +1033,16 @@
         <translation>Vitajte</translation>
     </message>
     <message>
-        <source>Welcome to Dash Core.</source>
-        <translation>Vitajte v Dash Core.</translation>
+        <source>Welcome to Suppo Core.</source>
+        <translation>Vitajte v Suppo Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Dash Core will store its data.</source>
-        <translation>Keďže toto je prvý krát čo spúšťate tento program, môžete vybrať kam bude Dash Core ukladať svoje dáta.</translation>
+        <source>As this is the first time the program is launched, you can choose where Suppo Core will store its data.</source>
+        <translation>Keďže toto je prvý krát čo spúšťate tento program, môžete vybrať kam bude Suppo Core ukladať svoje dáta.</translation>
     </message>
     <message>
-        <source>Dash Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Dash Core stiahne a uloží kópiu reťazca blokov Dash. Pri najmenej %1GB dát bude uložených v tejto zložke and bude ďalej rásť. Peňaženka bude tiež uložená v tejto zložke.</translation>
+        <source>Suppo Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Suppo Core stiahne a uloží kópiu reťazca blokov Dash. Pri najmenej %1GB dát bude uložených v tejto zložke and bude ďalej rásť. Peňaženka bude tiež uložená v tejto zložke.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1053,8 +1053,8 @@
         <translation>Použiť vlastný dátový adresár:</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Suppo Core</source>
+        <translation>Suppo Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1233,11 +1233,11 @@
         <translation>Peňaženka</translation>
     </message>
     <message>
-        <source>Automatically start Dash Core after logging in to the system.</source>
-        <translation>Automaticky spustiť Dash Core po prihlásení do systému.</translation>
+        <source>Automatically start Suppo Core after logging in to the system.</source>
+        <translation>Automaticky spustiť Suppo Core po prihlásení do systému.</translation>
     </message>
     <message>
-        <source>&amp;Start Dash Core on system login</source>
+        <source>&amp;Start Suppo Core on system login</source>
         <translation>&amp;Spusť Dash po prihlásení do systému</translation>
     </message>
     <message>
@@ -1802,8 +1802,8 @@ https://www.transifex.com/projects/p/dash/</translation>
 <context>
     <name>QObject</name>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Suppo Core</source>
+        <translation>Suppo Core</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -2802,8 +2802,8 @@ https://www.transifex.com/projects/p/dash/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Dash Core is shutting down...</source>
-        <translation>Dash core sa vypína...</translation>
+        <source>Suppo Core is shutting down...</source>
+        <translation>Suppo Core sa vypína...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2952,8 +2952,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>[testovacia sieť]</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Suppo Core</source>
+        <translation>Suppo Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2964,8 +2964,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Vývojári Bitcoin Core</translation>
     </message>
     <message>
-        <source>The Dash Core developers</source>
-        <translation>Vývojári Dash Core</translation>
+        <source>The Suppo Core developers</source>
+        <translation>Vývojári Suppo Core</translation>
     </message>
 </context>
 <context>
@@ -3534,8 +3534,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Spojiť s danou adresou a vždy na nej počúvať. Použite zápis [host]:port pre IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Dash Core is probably already running.</source>
-        <translation>Nedá sa zamknúť dátový adresár %s. Dash Core už pravdepodobne beží.</translation>
+        <source>Cannot obtain a lock on data directory %s. Suppo Core is probably already running.</source>
+        <translation>Nedá sa zamknúť dátový adresár %s. Suppo Core už pravdepodobne beží.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -3574,8 +3574,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Toto je predbežná testovacia zostava - používate na vlastné riziko - nepoužívajte na ťaženie alebo obchodné aplikácie</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Dash Core is probably already running.</source>
-        <translation>Nedá sa viazať ku %s na tomto počítači. Dash Core už pravdepodobne beží.</translation>
+        <source>Unable to bind to %s on this computer. Suppo Core is probably already running.</source>
+        <translation>Nedá sa viazať ku %s na tomto počítači. Suppo Core už pravdepodobne beží.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3834,7 +3834,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Autorské práva (C) 2009-%i Vývojári Bitcoin Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <source>Copyright (C) 2014-%i The Suppo Core Developers</source>
         <translation>Autorské práva (C) 2014-%i Vývojári jadra Dash</translation>
     </message>
     <message>
@@ -3846,8 +3846,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Chyba pripojenia k Masternode.</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Dash Core</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu Dash Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Suppo Core</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu Suppo Core</translation>
     </message>
     <message>
         <source>Found enough users, signing ( waiting %s )</source>
@@ -3890,8 +3890,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Informácie</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Dash Core is shutting down.</source>
-        <translation>Inicializácia kontroly zdravia zlyhala. Dash Core sa vypína.</translation>
+        <source>Initialization sanity check failed. Suppo Core is shutting down.</source>
+        <translation>Inicializácia kontroly zdravia zlyhala. Suppo Core sa vypína.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4118,8 +4118,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Použiť testovaciu sieť</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Dash Core to complete</source>
-        <translation>Bolo potrebné prepísať peňaženku: k dokončeniu reštartujte Dash Core</translation>
+        <source>Wallet needed to be rewritten: restart Suppo Core to complete</source>
+        <translation>Bolo potrebné prepísať peňaženku: k dokončeniu reštartujte Suppo Core</translation>
     </message>
     <message>
         <source>Will retry...</source>
@@ -4214,8 +4214,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Celkové maximum poplatkov (v %s) pre použitie jednej transakcie peňaženky. Príliš malá hodnota môže prerušiť veľké transakcie (predvolené: %s)</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong Dash Core will not work properly.</source>
-        <translation>Skontrolujte si prosím či máte správny čas a dátum na Vašom počítači. Ak je Vaše nastavenie zlé, Dash Core nebude pracovať správne.</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong Suppo Core will not work properly.</source>
+        <translation>Skontrolujte si prosím či máte správny čas a dátum na Vašom počítači. Ak je Vaše nastavenie zlé, Suppo Core nebude pracovať správne.</translation>
     </message>
     <message>
         <source>PrivateSend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
