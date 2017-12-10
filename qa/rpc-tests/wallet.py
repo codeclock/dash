@@ -86,7 +86,7 @@ class WalletTest (BitcoinTestFramework):
         self.nodes[1].generate(100)
         self.sync_all()
 
-        # node0 should end up with 1000 DASH in block rewards plus fees, but
+        # node0 should end up with 1000 SUPPOCOIN in block rewards plus fees, but
         # minus the 210 plus fees sent to node2
         assert_equal(self.nodes[0].getbalance(), 1000-210)
         assert_equal(self.nodes[2].getbalance(), 210)

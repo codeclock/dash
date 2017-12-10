@@ -166,7 +166,7 @@ dash-cli masternode status
 {
     "outpoint" : "<collateral_output>-<collateral_output_index>",
     "service" : "<ipaddress>:<port>",
-    "pubkey" : "<1000 DASH address>",
+    "pubkey" : "<1000 SUPPOCOIN address>",
     "status" : "Masternode successfully started"
 }
 ```

@@ -226,7 +226,7 @@ QT_TRANSLATE_NOOP("suppo-core", ""
 "Unable to locate enough PrivateSend denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("suppo-core", ""
 "Unable to locate enough PrivateSend non-denominated funds for this "
-"transaction that are not equal 1000 DASH."),
+"transaction that are not equal 1000 SUPPOCOIN."),
 QT_TRANSLATE_NOOP("suppo-core", ""
 "Unable to locate enough funds for this transaction that are not equal 1000 "
 "DASH."),
