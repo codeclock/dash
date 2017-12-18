@@ -1968,13 +1968,15 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     uint256 hashPrevBlock = pindex->pprev == NULL ? uint256() : pindex->pprev->GetBlockHash();
     assert(hashPrevBlock == view.GetBestBlock());
 
+    const bool isGenesisBlock = block.GetHash() == chainparams.GetConsensus().hashGenesisBlock;
+
     // Special case for the genesis block, skipping connection of its transactions
     // (its coinbase is unspendable)
-    if (block.GetHash() == chainparams.GetConsensus().hashGenesisBlock) {
-        if (!fJustCheck)
-            view.SetBestBlock(pindex->GetBlockHash());
-        return true;
-    }
+    // if (block.GetHash() == chainparams.GetConsensus().hashGenesisBlock) {
+    //     if (!fJustCheck)
+    //         view.SetBestBlock(pindex->GetBlockHash());
+    //     return true;
+    // }
 
     bool fScriptChecks = true;
     if (!hashAssumeValid.IsNull()) {
@@ -2027,7 +2029,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     // before the first had been spent.  Since those coinbases are sufficiently buried its no longer possible to create further
     // duplicate transactions descending from the known pairs either.
     // If we're on the known chain at height greater than where BIP34 activated, we can save the db accesses needed for the BIP30 check.
-    CBlockIndex *pindexBIP34height = pindex->pprev->GetAncestor(chainparams.GetConsensus().BIP34Height);
+    CBlockIndex *pindexBIP34height = isGenesisBlock ? NULL: pindex->pprev->GetAncestor(chainparams.GetConsensus().BIP34Height);
     //Only continue to enforce if we're below BIP34 activation height or the block hash at that height doesn't correspond.
     fEnforceBIP30 = fEnforceBIP30 && (!pindexBIP34height || !(pindexBIP34height->GetBlockHash() == chainparams.GetConsensus().BIP34Hash));
 
@@ -2223,16 +2225,19 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     // the peer who sent us this block is missing some data and wasn't able
     // to recognize that block is actually invalid.
     // TODO: resync data (both ways?) and try to reprocess this block later.
-    CAmount blockReward = nFees + GetBlockSubsidy(pindex->pprev->nBits, pindex->pprev->nHeight, chainparams.GetConsensus());
-    std::string strError = "";
-    if (!IsBlockValueValid(block, pindex->nHeight, blockReward, strError)) {
-        return state.DoS(0, error("ConnectBlock(DASH): %s", strError), REJECT_INVALID, "bad-cb-amount");
-    }
+    if(!isGenesisBlock){
+        CAmount blockReward = nFees + GetBlockSubsidy(pindex->pprev->nBits, pindex->pprev->nHeight, chainparams.GetConsensus());
+        std::string strError = "";
+        if (!IsBlockValueValid(block, pindex->nHeight, blockReward, strError)) {
+            return state.DoS(0, error("ConnectBlock(DASH): %s", strError), REJECT_INVALID, "bad-cb-amount");
+        }
+        
 
-    if (!IsBlockPayeeValid(block.vtx[0], pindex->nHeight, blockReward)) {
-        mapRejectedBlocks.insert(make_pair(block.GetHash(), GetTime()));
-        return state.DoS(0, error("ConnectBlock(DASH): couldn't find masternode or superblock payments"),
-                                REJECT_INVALID, "bad-cb-payee");
+        if (!IsBlockPayeeValid(block.vtx[0], pindex->nHeight, blockReward)) {
+            mapRejectedBlocks.insert(make_pair(block.GetHash(), GetTime()));
+            return state.DoS(0, error("ConnectBlock(DASH): couldn't find masternode or superblock payments"),
+                                    REJECT_INVALID, "bad-cb-payee");
+        }
     }
     // END SUPPOCOIN
 
@@ -2245,7 +2250,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         return true;
 
     // Write undo information to disk
-    if (pindex->GetUndoPos().IsNull() || !pindex->IsValid(BLOCK_VALID_SCRIPTS))
+    if (!isGenesisBlock && (pindex->GetUndoPos().IsNull() || !pindex->IsValid(BLOCK_VALID_SCRIPTS)))
     {
         if (pindex->GetUndoPos().IsNull()) {
             CDiskBlockPos pos;
