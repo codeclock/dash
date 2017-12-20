@@ -4,7 +4,7 @@ Debian
 This directory contains files used to package suppod/suppo-qt
 for Debian-based Linux systems. If you compile suppod/suppo-qt yourself, there are some useful files here.
 
-## dash: URI support ##
+## suppo: URI support ##
 
 
 suppo-qt.desktop  (Gnome / Open Desktop)

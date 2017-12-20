@@ -278,7 +278,7 @@
         <translation>&amp;Recevoir</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
+        <source>Request payments (generates QR codes and suppo: URIs)</source>
         <translation>Demande de paiements (génère des QR-codes et des URIs Suppocoin)</translation>
     </message>
     <message>
@@ -474,7 +474,7 @@
         <translation>Ouvrir une &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a dash: URI or payment request</source>
+        <source>Open a suppo: URI or payment request</source>
         <translation>Ouvrir une URI ou demande de paiement Suppocoin</translation>
     </message>
     <message>
@@ -1863,7 +1863,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Erreur de demande de paiement</translation>
     </message>
     <message>
-        <source>Cannot start dash: click-to-pay handler</source>
+        <source>Cannot start suppo: click-to-pay handler</source>
         <translation>Impossible de démarrer le gestionnaire Suppocoin click-to-pay</translation>
     </message>
     <message>
@@ -2998,7 +2998,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Message :</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Suppocoin network.</source>
+        <source>A message that was attached to the suppo: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Suppocoin network.</source>
         <translation>Un message joint à l'URI Suppocoin qui sera sauvegardé avec la transaction pour référence. Note : ce message ne sera pas envoyé à travers le réseau Suppocoin.</translation>
     </message>
     <message>

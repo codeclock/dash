@@ -70,7 +70,7 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/dash.conf are parsed in qt/dash.cpp's main()
+    // If Qt is used, parameters/dash.conf are parsed in qt/suppo.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
@@ -132,12 +132,12 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "dash:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "suppo:"))
                 fCommandLine = true;
 
         if (fCommandLine)
         {
-            fprintf(stderr, "Error: There is no RPC client functionality in suppod anymore. Use the dash-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in suppod anymore. Use the suppo-cli utility instead.\n");
             exit(EXIT_FAILURE);
         }
 #ifndef WIN32

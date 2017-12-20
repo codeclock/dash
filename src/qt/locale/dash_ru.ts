@@ -278,8 +278,8 @@
         <translation>&amp;Получить</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
-        <translation>Запросить платежи (создать QR-коды и dash: URI)</translation>
+        <source>Request payments (generates QR codes and suppo: URIs)</source>
+        <translation>Запросить платежи (создать QR-коды и suppo: URI)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -474,8 +474,8 @@
         <translation>Открыть &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a dash: URI or payment request</source>
-        <translation>Открыть dash: URI или запрос платежа</translation>
+        <source>Open a suppo: URI or payment request</source>
+        <translation>Открыть suppo: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1863,8 +1863,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Ошибка запроса платежа</translation>
     </message>
     <message>
-        <source>Cannot start dash: click-to-pay handler</source>
-        <translation>Не удаётся запустить обработчик dash: click-to-pay</translation>
+        <source>Cannot start suppo: click-to-pay handler</source>
+        <translation>Не удаётся запустить обработчик suppo: click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -2998,8 +2998,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Сообщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Suppocoin network.</source>
-        <translation>К dash: URI было прикреплено сообщение, которое будет сохранено вместе с транзакцией для вашего сведения. Обратите внимание: сообщение не будет отправлено через сеть Suppocoin.</translation>
+        <source>A message that was attached to the suppo: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Suppocoin network.</source>
+        <translation>К suppo: URI было прикреплено сообщение, которое будет сохранено вместе с транзакцией для вашего сведения. Обратите внимание: сообщение не будет отправлено через сеть Suppocoin.</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>

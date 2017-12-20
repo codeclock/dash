@@ -278,8 +278,8 @@
         <translation>&amp;Empfangen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
-        <translation>Zahlungen anfordern (erzeugt QR-Codes und "dash:"-URIs)</translation>
+        <source>Request payments (generates QR codes and suppo: URIs)</source>
+        <translation>Zahlungen anfordern (erzeugt QR-Codes und "suppo:"-URIs)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -474,8 +474,8 @@
         <translation>&amp;URI öffnen...</translation>
     </message>
     <message>
-        <source>Open a dash: URI or payment request</source>
-        <translation>Eine "dash:"-URI oder Zahlungsanforderung öffnen</translation>
+        <source>Open a suppo: URI or payment request</source>
+        <translation>Eine "suppo:"-URI oder Zahlungsanforderung öffnen</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1865,7 +1865,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Fehlerhafte Zahlungsanforderung</translation>
     </message>
     <message>
-        <source>Cannot start dash: click-to-pay handler</source>
+        <source>Cannot start suppo: click-to-pay handler</source>
         <translation>Suppocoin kann nicht gestartet werden: click-to-pay handler</translation>
     </message>
     <message>
@@ -3001,8 +3001,8 @@ Dies kann passieren, wenn einige Suppocoin aus ihrer Wallet bereits ausgegeben w
         <translation>Nachricht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Suppocoin network.</source>
-        <translation>Eine an die "dash:"-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Suppocoin-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the suppo: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Suppocoin network.</source>
+        <translation>Eine an die "suppo:"-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Suppocoin-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>

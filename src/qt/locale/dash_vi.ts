@@ -278,8 +278,8 @@
         <translation>&amp;Nhận</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
-        <translation>Yêu cầu thanh toán (sinh mã QR và dash: URIs)</translation>
+        <source>Request payments (generates QR codes and suppo: URIs)</source>
+        <translation>Yêu cầu thanh toán (sinh mã QR và suppo: URIs)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -474,8 +474,8 @@
         <translation>Mở &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a dash: URI or payment request</source>
-        <translation>Mở một dash: URI hoặc một yêu cầu thanh toán</translation>
+        <source>Open a suppo: URI or payment request</source>
+        <translation>Mở một suppo: URI hoặc một yêu cầu thanh toán</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1863,8 +1863,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Yêu cầu thanh toán bị lỗi</translation>
     </message>
     <message>
-        <source>Cannot start dash: click-to-pay handler</source>
-        <translation>Không thể khởi động dash: trình xử lý click-to-pay</translation>
+        <source>Cannot start suppo: click-to-pay handler</source>
+        <translation>Không thể khởi động suppo: trình xử lý click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -2998,8 +2998,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Thông điệp:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Suppocoin network.</source>
-        <translation>Một thông điệp được đính với dash: URI đó sẽ được lưu trữ với các giao dịch cho các bạn tham khảo. Lưu ý: Thông điệp này sẽ không được gửi qua mạng Suppocoin. </translation>
+        <source>A message that was attached to the suppo: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Suppocoin network.</source>
+        <translation>Một thông điệp được đính với suppo: URI đó sẽ được lưu trữ với các giao dịch cho các bạn tham khảo. Lưu ý: Thông điệp này sẽ không được gửi qua mạng Suppocoin. </translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>

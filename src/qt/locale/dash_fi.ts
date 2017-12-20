@@ -278,7 +278,7 @@
         <translation>&amp;Vastaanota</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
+        <source>Request payments (generates QR codes and suppo: URIs)</source>
         <translation>Pyydä maksuja (Luo QR koodit ja Suppocoin: URIt)</translation>
     </message>
     <message>
@@ -474,7 +474,7 @@
         <translation>Avaa &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a dash: URI or payment request</source>
+        <source>Open a suppo: URI or payment request</source>
         <translation>Avaa Suppocoin: URI tai maksupyyntö</translation>
     </message>
     <message>
@@ -1864,7 +1864,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Maksupyyntövirhe</translation>
     </message>
     <message>
-        <source>Cannot start dash: click-to-pay handler</source>
+        <source>Cannot start suppo: click-to-pay handler</source>
         <translation>Ei voi käynnistää Suppocoinia: click-to-pay handler</translation>
     </message>
     <message>
@@ -3003,7 +3003,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Viesti:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Suppocoin network.</source>
+        <source>A message that was attached to the suppo: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Suppocoin network.</source>
         <translation>Viesti joka liitettiin Suppocoin: URI joka talletetaan siirtotapahtuman kanssa viitteeksi sinulle. Huomio: Tätä viestiä ei lähetetä Suppocoin verkkoon.</translation>
     </message>
     <message>
