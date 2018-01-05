@@ -79,7 +79,7 @@ Creating a release build
 ------------------------
 You can ignore this section if you are building `suppod` for your own use.
 
-suppod/dash-cli binaries are not included in the Suppo-Qt.app bundle.
+suppod/suppo-cli binaries are not included in the Suppo-Qt.app bundle.
 
 If you are building `suppod` or `Suppo Core` for others, your build machine should be set up
 as follows for maximum compatibility:
@@ -115,5 +115,5 @@ Other commands:
 -------
 
     ./suppod -daemon # to start the dash daemon.
-    ./dash-cli --help  # for a list of command-line options.
-    ./dash-cli help    # When the daemon is running, to get a list of RPC commands
+    ./suppo-cli --help  # for a list of command-line options.
+    ./suppo-cli help    # When the daemon is running, to get a list of RPC commands

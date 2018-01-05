@@ -197,7 +197,7 @@ def initialize_chain(test_dir):
             if os.path.isdir(os.path.join("cache","node"+str(i))):
                 shutil.rmtree(os.path.join("cache","node"+str(i)))
 
-        # Create cache directories, run dashds:
+        # Create cache directories, run suppods:
         for i in range(4):
             datadir=initialize_datadir("cache", i)
             args = [ os.getenv("SUPPOD", "suppod"), "-server", "-keypool=1", "-datadir="+datadir, "-discover=0" ]
@@ -304,7 +304,7 @@ def start_node(i, dirname, extra_args=None, rpchost=None, timewait=None, binary=
 
 def start_nodes(num_nodes, dirname, extra_args=None, rpchost=None, binary=None):
     """
-    Start multiple dashds, return RPC connections to them
+    Start multiple suppods, return RPC connections to them
     """
     if extra_args is None: extra_args = [ None for i in range(num_nodes) ]
     if binary is None: binary = [ None for i in range(num_nodes) ]

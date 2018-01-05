@@ -62,7 +62,7 @@ Lock file:           `/var/lock/subsys/suppod` (CentOS)
 The configuration file, PID directory (if applicable) and data directory
 should all be owned by the suppocore user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-suppocore user and group.  Access to dash-cli and other suppod rpc clients
+suppocore user and group.  Access to suppo-cli and other suppod rpc clients
 can then be controlled by group membership.
 
 3b) Mac OS X

@@ -65,7 +65,7 @@ buildDir = BUILDDIR
 if "DASHD" not in os.environ:
     os.environ["DASHD"] = buildDir + '/src/suppod' + EXEEXT
 if "DASHCLI" not in os.environ:
-    os.environ["DASHCLI"] = buildDir + '/src/dash-cli' + EXEEXT
+    os.environ["DASHCLI"] = buildDir + '/src/suppo-cli' + EXEEXT
 
 if EXEEXT == ".exe" and "-win" not in opts:
     # https://github.com/bitcoin/bitcoin/commit/d52802551752140cf41f0d9a225a43e84404d3e9
