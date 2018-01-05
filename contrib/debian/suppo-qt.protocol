@@ -1,6 +1,6 @@
 [Protocol]
 exec=suppo-qt '%u'
-protocol=dash
+protocol=suppo
 input=none
 output=none
 helper=true
