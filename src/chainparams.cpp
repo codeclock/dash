@@ -145,12 +145,9 @@ public:
 
 
         vSeeds.push_back(CDNSSeedData("suppocoin.io", "dnsseed.suppocoin.io"));
-        //vSeeds.push_back(CDNSSeedData("dashdot.io", "dnsseed.dashdot.io"));
-        //vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
-        //vSeeds.push_back(CDNSSeedData("dashpay.io", "dnsseed.dashpay.io"));
 
-        // Suppo addresses start with 'X' change to 'S' -> 63 (See https://en.bitcoin.it/wiki/List_of_address_prefixes)
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
+        // Suppo addresses start with 'S' -> 63 (See https://en.bitcoin.it/wiki/List_of_address_prefixes)
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,63);
         // Suppo script addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,16);
         // Suppo private keys start with '7' or 'X'
@@ -160,8 +157,8 @@ public:
         // Suppo BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
-        // Suppo BIP44 coin type is '5'
-        nExtCoinType = 5;
+        // Suppo BIP44 coin type is '5' will be '222'
+        nExtCoinType = 5;//change to 222
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
