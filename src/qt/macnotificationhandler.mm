@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.dash.Suppo-Qt";
+        return @"org.suppo.Suppo-Qt";
     } else {
         return [self __bundleIdentifier];
     }

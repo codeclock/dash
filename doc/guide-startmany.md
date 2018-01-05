@@ -80,9 +80,7 @@ Create the `masternode.conf` file in the same directory as your `wallet.dat`.
 
 Copy the masternode private key and correspondig collateral output transaction that holds the 1000 Suppocoin.
 
-The masternode private key may be an existing key from [Option 1](#option1), or a newly generated key from [Option 2](#option2). 
-
-*Note: The masternode priviate key is **not** the same as a wallet private key. **Never** put your wallet private key in the masternode.conf file. That is almost equivalent to putting your 1000 Suppocoin on the remote server and defeats the purpose of a hot/cold setup.*
+*Note: The masternode priviate key is **not** the same as a wallet private key. **Never** put your wallet private key in the masternode.conf file. That is almost equivalent to putting your 1000 SUPPOCOINS on the remote server and defeats the purpose of a hot/cold setup.*
 
 ### Get the collateral output
 
@@ -109,10 +107,6 @@ Example:
 mn01 127.0.0.1:7777 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0
 mn02 127.0.0.2:7777 93WaAb3htPJEV8E9aQcN23Jt97bPex7YvWfgMDTUdWJvzmrMqey aa9f1034d973377a5e733272c3d0eced1de22555ad45d6b24abadff8087948d4 0
 ```
-
-## What about the dash.conf file?
-
-If you are using a `masternode.conf` file you no longer need the `dash.conf` file. The exception is if you need custom settings (_thanks oblox_). In that case you **must** remove `masternode=1` from local `dash.conf` file. This option should be used only to start local Hot masternode now.
 
 ## Update dash.conf on server
 
@@ -162,11 +156,11 @@ Example ```masternode start-alias mn01```
 Issue command `masternode status`
 It should return you something like that:
 ```
-dash-cli masternode status
+suppo-cli masternode status
 {
     "outpoint" : "<collateral_output>-<collateral_output_index>",
     "service" : "<ipaddress>:<port>",
-    "pubkey" : "<1000 SUPPOCOIN address>",
+    "pubkey" : "<1000 SUPPOCOINS address>",
     "status" : "Masternode successfully started"
 }
 ```

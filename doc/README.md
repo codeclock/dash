@@ -1,4 +1,4 @@
-Suppo Core 0.0.1
+Suppo Core 0.13.1
 =====================
 
 This is the official reference wallet for Suppocoin digital currency and comprises the backbone of the Suppocoin peer-to-peer network. You can [download Suppo Core](https://www.suppocoin.io/downloads/) or [build it yourself](#building) using the guides below.
@@ -26,8 +26,6 @@ Drag Suppo-Qt to your applications folder, and then run Suppo-Qt.
 
 * See the [Suppocoin documentation](https://dashpay.atlassian.net/wiki/display/DOC)
 for help and more information.
-* Ask for help on [#dashpay](http://webchat.freenode.net?channels=dashpay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=dashpay).
-* Ask for help on the [SuppocoinTalk](https://dashtalk.org/) forums.
 
 Building
 ---------------------
@@ -56,9 +54,6 @@ The Suppo Core repo's [root README](/README.md) contains relevant information on
 - [BIPS](bips.md)
 - [Dnsseed Policy](dnsseed-policy.md)
 
-### Resources
-* Discuss on the [SuppocoinTalk](https://dashtalk.org/) forums, in the Development & Technical Discussion board.
-* Discuss on [#dashpay](http://webchat.freenode.net/?channels=dashpay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=dashpay).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

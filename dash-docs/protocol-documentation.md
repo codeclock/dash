@@ -1,4 +1,4 @@
-Protocol Documentation - 0.12.1
+Protocol Documentation - 0.13.1
 =====================================
 
 This document describes the protocol extensions for all additional functionality build into the Suppocoin protocol. This doesn't include any of the Bitcoin protocol, which has been left intact in the Suppocoin project. For more information about the core protocol, please see https://en.bitcoin.it/w/index.php?title#Protocol_documentation&action#edit
@@ -148,9 +148,9 @@ Asks users to sign final mixing tx message.
 | ---------- | ----------- | --------- | -------- |
 | 4 | nDenom | int | Which denomination is allowed in this mixing session
 | 41 | vin | [CTxIn](#ctxin) | unspend output from masternode which is hosting this session
-| 4 | nTime | int | the time this DSQ was created
-| 4 | fReady | int | if the mixing pool is ready to be executed
-| 71-73 | vchSig | char[] | Signature of this message by masternode (verifiable via pubKeyMasternode)
+| 8 | nTime | int64_t | the time this DSQ was created
+| 1 | fReady | bool | if the mixing pool is ready to be executed
+| 66 | vchSig | char[] | Signature of this message by masternode (verifiable via pubKeyMasternode)
 
 ### DSACCEPT - "dsa"
 
@@ -172,7 +172,7 @@ When queue is ready user is expected to send his entry to start actual mixing
 | ? | vecTxDSIn | CTxDSIn[] | vector of users inputs (CTxDSIn serialization is equal to [CTxIn](#ctxin) serialization)
 | 8 | nAmount | int64_t | depreciated since 12.1, it's used for backwards compatibility only and can be removed with future protocol bump
 | ? | txCollateral | [CTransaction](#ctransaction) | Collateral transaction which is used to prevent misbehavior and also to charge fees randomly
-| ? | vecTxDSOut | CTxDSOut[] | vector of user outputs (CTxDSOut serialization is equal to [CTxOut](#ctxout) serialization)
+| ? | vecTxOut | CTxOut[] | vector of user outputs
 
 ### DSSIGNFINALTX - "dss"
 
@@ -275,8 +275,8 @@ Masternode Verify
 
 | Field Size | Field Name | Data type | Description |
 | ---------- | ----------- | --------- | -------- |
-| 41 | vin1 | [CTxIn](#ctxin) | The unspent output which is holding 1000 SUPPOCOIN for masternode 1
-| 41 | vin2 | [CTxIn](#ctxin) | The unspent output which is holding 1000 SUPPOCOIN for masternode 2
+| 41 | vin1 | [CTxIn](#ctxin) | The unspent output which is holding 1000 DASH for masternode 1
+| 41 | vin2 | [CTxIn](#ctxin) | The unspent output which is holding 1000 DASH for masternode 2
 | # | addr | [CService](#cservice) | IPv4 address / port of the masternode
 | 4 | nonce | int | Nonce
 | 4 | nBlockHeight | int | The blockheight
@@ -318,7 +318,7 @@ Get Masternode list or specific entry
 
 | Field Size | Field Name | Data type | Description |
 | ---------- | ----------- | --------- | -------- |
-| 41 | vin | [CTxIn](#ctxin) | The unspent output which is holding 1000 SUPPOCOIN
+| 41 | vin | [CTxIn](#ctxin) | The unspent output which is holding 1000 DASH
 
 ### SYNCSTATUSCOUNT - "ssc"
 
