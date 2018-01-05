@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between dash-cli and suppod)
+ * CBaseChainParams defines the base parameters (shared between suppo-cli and suppod)
  * of a given instance of the Suppocoin system.
  */
 class CBaseChainParams

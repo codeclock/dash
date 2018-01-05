@@ -44,7 +44,7 @@ This allows for running suppod without having to do any manual configuration.
 relative to the data directory. `wallet` *only* supports relative paths.
 
 For an example configuration file that describes the configuration settings,
-see `contrib/debian/examples/dash.conf`.
+see `contrib/debian/examples/suppo.conf`.
 
 3. Paths
 ---------------------------------
@@ -54,7 +54,7 @@ see `contrib/debian/examples/dash.conf`.
 All three configurations assume several paths that might need to be adjusted.
 
 Binary:              `/usr/bin/suppod`  
-Configuration file:  `/etc/suppocore/dash.conf`  
+Configuration file:  `/etc/suppocore/suppo.conf`  
 Data directory:      `/var/lib/suppod`  
 PID file:            `/var/run/suppod/suppod.pid` (OpenRC and Upstart) or `/var/lib/suppod/suppod.pid` (systemd)  
 Lock file:           `/var/lock/subsys/suppod` (CentOS)  
@@ -68,7 +68,7 @@ can then be controlled by group membership.
 3b) Mac OS X
 
 Binary:              `/usr/local/bin/suppod`  
-Configuration file:  `~/Library/Application Support/suppocore/dash.conf`  
+Configuration file:  `~/Library/Application Support/suppocore/suppo.conf`  
 Data directory:      `~/Library/Application Support/suppocore`
 Lock file:           `~/Library/Application Support/suppocore/.lock`
 

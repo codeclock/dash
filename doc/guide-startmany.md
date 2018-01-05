@@ -108,16 +108,16 @@ mn01 127.0.0.1:7777 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84
 mn02 127.0.0.2:7777 93WaAb3htPJEV8E9aQcN23Jt97bPex7YvWfgMDTUdWJvzmrMqey aa9f1034d973377a5e733272c3d0eced1de22555ad45d6b24abadff8087948d4 0
 ```
 
-## Update dash.conf on server
+## Update suppo.conf on server
 
-If you generated a new masternode private key, you will need to update the remote `dash.conf` files.
+If you generated a new masternode private key, you will need to update the remote `suppo.conf` files.
 
 Shut down the daemon and then edit the file.
 
-```nano .suppocore/dash.conf```
+```nano .suppocore/suppo.conf```
 
 ### Edit the masternodeprivkey
-If you generated a new masternode private key, you will need to update the `masternodeprivkey` value in your remote `dash.conf` file.
+If you generated a new masternode private key, you will need to update the `masternodeprivkey` value in your remote `suppo.conf` file.
 
 ## Start your Masternodes
 

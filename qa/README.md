@@ -31,9 +31,9 @@ Possible options:
 
 ```
   -h, --help            show this help message and exit
-  --nocleanup           Leave dashds and test.* datadir on exit or error
-  --noshutdown          Don't stop dashds after the test execution
-  --srcdir=SRCDIR       Source directory containing suppod/dash-cli
+  --nocleanup           Leave suppods and test.* datadir on exit or error
+  --noshutdown          Don't stop suppods after the test execution
+  --srcdir=SRCDIR       Source directory containing suppod/suppo-cli
                         (default: ../../src)
   --tmpdir=TMPDIR       Root directory for datadirs
   --tracerpc            Print out all RPC calls as they are made

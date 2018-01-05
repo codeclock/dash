@@ -9,7 +9,7 @@ Group=suppocore
 Type=forking
 PIDFile=/var/lib/suppod/suppod.pid
 ExecStart=/usr/bin/suppod -daemon -pid=/var/lib/suppod/suppod.pid \
--conf=/etc/suppocore/dash.conf -datadir=/var/lib/suppod -disablewallet
+-conf=/etc/suppocore/suppo.conf -datadir=/var/lib/suppod -disablewallet
 
 Restart=always
 PrivateTmp=true

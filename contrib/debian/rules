@@ -5,8 +5,8 @@
 #build/suppod::
 #	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_suppo)
 
-DEB_INSTALL_EXAMPLES_dashd += debian/examples/*
-DEB_INSTALL_MANPAGES_dashd += debian/manpages/*
+DEB_INSTALL_EXAMPLES_suppod += debian/examples/*
+DEB_INSTALL_MANPAGES_suppod += debian/manpages/*
 
 %:
 	dh --with bash-completion $@
