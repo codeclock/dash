@@ -229,7 +229,7 @@ QT_TRANSLATE_NOOP("suppo-core", ""
 "transaction that are not equal 1000 SUPPOCOIN."),
 QT_TRANSLATE_NOOP("suppo-core", ""
 "Unable to locate enough funds for this transaction that are not equal 1000 "
-"DASH."),
+"SUPPO."),
 QT_TRANSLATE_NOOP("suppo-core", ""
 "Unsupported argument -socks found. Setting SOCKS version isn't possible "
 "anymore, only SOCKS5 proxies are supported."),

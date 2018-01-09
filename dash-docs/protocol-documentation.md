@@ -275,8 +275,8 @@ Masternode Verify
 
 | Field Size | Field Name | Data type | Description |
 | ---------- | ----------- | --------- | -------- |
-| 41 | vin1 | [CTxIn](#ctxin) | The unspent output which is holding 1000 DASH for masternode 1
-| 41 | vin2 | [CTxIn](#ctxin) | The unspent output which is holding 1000 DASH for masternode 2
+| 41 | vin1 | [CTxIn](#ctxin) | The unspent output which is holding 1000 SUPPOCOIN for masternode 1
+| 41 | vin2 | [CTxIn](#ctxin) | The unspent output which is holding 1000 SUPPOCOIN for masternode 2
 | # | addr | [CService](#cservice) | IPv4 address / port of the masternode
 | 4 | nonce | int | Nonce
 | 4 | nBlockHeight | int | The blockheight
@@ -318,7 +318,7 @@ Get Masternode list or specific entry
 
 | Field Size | Field Name | Data type | Description |
 | ---------- | ----------- | --------- | -------- |
-| 41 | vin | [CTxIn](#ctxin) | The unspent output which is holding 1000 DASH
+| 41 | vin | [CTxIn](#ctxin) | The unspent output which is holding 1000 SUPPOCOIN
 
 ### SYNCSTATUSCOUNT - "ssc"
 
