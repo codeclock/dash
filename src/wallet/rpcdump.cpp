@@ -550,11 +550,11 @@ UniValue dumpprivkey(const UniValue& params, bool fHelp)
     
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "dumpprivkey \"dashaddress\"\n"
-            "\nReveals the private key corresponding to 'dashaddress'.\n"
+            "dumpprivkey \"suppoaddress\"\n"
+            "\nReveals the private key corresponding to 'suppoaddress'.\n"
             "Then the importprivkey can be used with this output\n"
             "\nArguments:\n"
-            "1. \"dashaddress\"   (string, required) The dash address for the private key\n"
+            "1. \"suppoaddress\"   (string, required) The suppocoin address for the private key\n"
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
             "\nExamples:\n"
