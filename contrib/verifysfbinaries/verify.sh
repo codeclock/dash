@@ -14,17 +14,17 @@ function clean_up {
    done
 }
 
-WORKINGDIR="/tmp/bitcoin"
+WORKINGDIR="/tmp/suppocoin"
 TMPFILE="hashes.tmp"
 
 SIGNATUREFILENAME="SHA256SUMS.asc"
 RCSUBDIR="test/"
-BASEDIR="https://bitcoin.org/bin/"
-VERSIONPREFIX="bitcoin-core-"
+BASEDIR="https://suppocoin.io/bin/"
+VERSIONPREFIX="suppo-core-"
 RCVERSIONSTRING="rc"
 
 #this URL is used if a version number is not specified as an argument to the script
-SIGNATUREFILE="$BASEDIR""$VERSIONPREFIX""0.10.4/""$RCSUBDIR""$SIGNATUREFILENAME"
+SIGNATUREFILE="$BASEDIR""$VERSIONPREFIX""0.13.1/""$RCSUBDIR""$SIGNATUREFILENAME"
 
 if [ ! -d "$WORKINGDIR" ]; then
    mkdir "$WORKINGDIR"
