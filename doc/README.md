@@ -22,10 +22,6 @@ Unpack the files into a directory, and then run suppo-qt.exe.
 
 Drag Suppo-Qt to your applications folder, and then run Suppo-Qt.
 
-### Need Help?
-
-* See the [Suppocoin documentation](https://dashpay.atlassian.net/wiki/display/DOC)
-for help and more information.
 
 Building
 ---------------------

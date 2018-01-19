@@ -5,7 +5,7 @@ Upstart: suppod.conf
 OpenRC:  suppod.openrc
          suppod.openrcconf
 CentOS:  suppod.init
-OS X:    org.dash.suppod.plist
+OS X:    org.suppo.suppod.plist
 
 have been made available to assist packagers in creating node packages here.
 

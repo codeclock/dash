@@ -41,10 +41,10 @@ NOTE: Building with Qt4 is still supported, however, doing so could result in a 
 1. Clone the GitHub tree to get the source code and go into the directory.
 
         git clone https://github.com/codeclock/sc.git
-        cd dash
+        cd sc
 
 2.  Build Suppo Core:
-    This will configure and build the headless dash binaries as well as the gui (if Qt is found).
+    This will configure and build the headless suppo binaries as well as the gui (if Qt is found).
     You can disable the gui build by passing `--without-gui` to configure.
 
         ./autogen.sh
@@ -102,7 +102,7 @@ directory. We have to first create the RPC configuration file, though.
 Run `./suppod` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=dashrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/suppocore/suppo.conf"
+    echo -e "rpcuser=supporpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/suppocore/suppo.conf"
     chmod 600 "/Users/${USER}/Library/Application Support/suppocore/suppo.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
@@ -114,6 +114,6 @@ you can monitor its process by looking at the debug.log file, like this:
 Other commands:
 -------
 
-    ./suppod -daemon # to start the dash daemon.
+    ./suppod -daemon # to start the suppocoin daemon.
     ./suppo-cli --help  # for a list of command-line options.
     ./suppo-cli help    # When the daemon is running, to get a list of RPC commands

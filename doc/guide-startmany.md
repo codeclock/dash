@@ -166,8 +166,3 @@ suppo-cli masternode status
 ```
 Command output should have "_Masternode successfully started_" in its `status` field now. If it says "_not capable_" instead, you should check your config again.
 
-### Local
-
-Search your Masternodes on https://dashninja.pl/masternodes.html
-
-_Hint: Bookmark it, you definitely will be using this site a lot._

@@ -104,18 +104,18 @@ use old versions of Upstart and do not supply the start-stop-daemon utility.
 Copy suppod.init to /etc/init.d/suppod. Test by running `service suppod start`.
 
 Using this script, you can adjust the path and flags to the suppod program by
-setting the DASHD and FLAGS environment variables in the file
+setting the SUPPOD and FLAGS environment variables in the file
 /etc/sysconfig/suppod. You can also use the DAEMONOPTS environment variable here.
 
 4e) Mac OS X
 
-Copy org.dash.suppod.plist into ~/Library/LaunchAgents. Load the launch agent by
-running `launchctl load ~/Library/LaunchAgents/org.dash.suppod.plist`.
+Copy org.suppo.suppod.plist into ~/Library/LaunchAgents. Load the launch agent by
+running `launchctl load ~/Library/LaunchAgents/org.suppo.suppod.plist`.
 
 This Launch Agent will cause suppod to start whenever the user logs in.
 
 NOTE: This approach is intended for those wanting to run suppod as the current user.
-You will need to modify org.dash.suppod.plist if you intend to use it as a
+You will need to modify org.suppo.suppod.plist if you intend to use it as a
 Launch Daemon with a dedicated suppocore user.
 
 5. Auto-respawn

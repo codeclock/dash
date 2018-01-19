@@ -62,10 +62,10 @@ for arg in sys.argv[1:]:
 
 #Set env vars
 buildDir = BUILDDIR
-if "DASHD" not in os.environ:
-    os.environ["DASHD"] = buildDir + '/src/suppod' + EXEEXT
-if "DASHCLI" not in os.environ:
-    os.environ["DASHCLI"] = buildDir + '/src/suppo-cli' + EXEEXT
+if "SUPPOD" not in os.environ:
+    os.environ["SUPPOD"] = buildDir + '/src/suppod' + EXEEXT
+if "SUPPOCLI" not in os.environ:
+    os.environ["SUPPOCLI"] = buildDir + '/src/suppo-cli' + EXEEXT
 
 if EXEEXT == ".exe" and "-win" not in opts:
     # https://github.com/bitcoin/bitcoin/commit/d52802551752140cf41f0d9a225a43e84404d3e9

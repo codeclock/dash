@@ -272,7 +272,7 @@ bool LogAcceptCategory(const char* category)
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
             // "suppo" is a composite category enabling all Suppocoin-related debug output
-            if(ptrCategory->count(string("dash"))) {
+            if(ptrCategory->count(string("suppo"))) {
                 ptrCategory->insert(string("privatesend"));
                 ptrCategory->insert(string("instantsend"));
                 ptrCategory->insert(string("masternode"));
@@ -496,7 +496,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "dash";
+    const char* pszModule = "suppo";
 #endif
     if (pex)
         return strprintf(
