@@ -1,9 +1,9 @@
-Suppo Core staging tree 0.12.1
+Suppo Core staging tree 0.13.1
 ===============================
 
-`master:` [![Build Status](https://travis-ci.org/codeclock/sc.svg?branch=master)](https://travis-ci.org/codeclock/sc) `v0.12.0.x:` [![Build Status](https://travis-ci.org/codeclock/sc.svg?branch=v0.12.0.x)](https://travis-ci.org/codeclock/sc/branches) `v0.12.1.x:` [![Build Status](https://travis-ci.org/codeclock/sc.svg?branch=v0.12.1.x)](https://travis-ci.org/codeclock/sc/branches)
+`master:` [![Build Status](https://travis-ci.org/codeclock/sc.svg?branch=master)](https://travis-ci.org/codeclock/sc) `v0.13.1.x:` [![Build Status](https://travis-ci.org/codeclock/sc.svg?branch=v0.13.1.x)](https://travis-ci.org/codeclock/sc/branches) `v0.13.1.x:` [![Build Status](https://travis-ci.org/codeclock/sc.svg?branch=v0.13.1.x)](https://travis-ci.org/codeclock/sc/branches)
 
-http://www.suppocoin.io/
+https://www.suppocoin.io/
 
 
 What is Suppocoin?
