@@ -15,7 +15,7 @@ To install:
 
 If you build yourself, you will either need to modify the paths in
 the .desktop file or copy or symlink your suppo-qt binary to `/usr/bin`
-and the `../../share/pixmaps/dash128.png` to `/usr/share/pixmaps`
+and the `../../share/pixmaps/suppo128.png` to `/usr/share/pixmaps`
 
 suppo-qt.protocol (KDE)
 
