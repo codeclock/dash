@@ -4138,6 +4138,11 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>The Dash Core developers</source>
+        <translation>The Dash Core developers</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>The Suppo Core developers</source>
         <translation>The Suppo Core developers</translation>
     </message>

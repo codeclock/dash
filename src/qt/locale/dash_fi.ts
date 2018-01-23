@@ -3196,6 +3196,10 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Bitcoin Core kehittäjät</translation>
     </message>
     <message>
+        <source>The Dash Core developers</source>
+        <translation>Dash Core kehittäjät</translation>
+    </message>
+    <message>
         <source>The Suppo Core developers</source>
         <translation>Suppo Core kehittäjät</translation>
     </message>
