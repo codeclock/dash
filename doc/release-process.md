@@ -88,16 +88,16 @@ The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
 ### Build and sign Suppo Core for Linux, Windows, and OS X:
 
-	./bin/gbuild --commit suppo=v${VERSION} ../suppo/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gbuild --commit sc=v${VERSION} ../sc/contrib/gitian-descriptors/gitian-linux.yml
 	./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../suppo/contrib/gitian-descriptors/gitian-linux.yml
 	mv build/out/suppo-*.tar.gz build/out/src/suppo-*.tar.gz ../
 
-	./bin/gbuild --commit suppo=v${VERSION} ../suppo/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gbuild --commit sc=v${VERSION} ../sc/contrib/gitian-descriptors/gitian-win.yml
 	./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../suppo/contrib/gitian-descriptors/gitian-win.yml
 	mv build/out/suppo-*-win-unsigned.tar.gz inputs/suppo-win-unsigned.tar.gz
 	mv build/out/suppo-*.zip build/out/suppo-*.exe ../
 
-	./bin/gbuild --commit suppo=v${VERSION} ../suppo/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gbuild --commit sc=v${VERSION} ../sc/contrib/gitian-descriptors/gitian-osx.yml
 	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../suppo/contrib/gitian-descriptors/gitian-osx.yml
 	mv build/out/suppo-*-osx-unsigned.tar.gz inputs/suppo-osx-unsigned.tar.gz
 	mv build/out/suppo-*.tar.gz build/out/suppo-*.dmg ../

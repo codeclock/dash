@@ -1,7 +1,7 @@
-Suppo Core 0.13.1
+Suppo Core 0.14.1
 =====================
 
-This is the official reference wallet for Suppocoin digital currency and comprises the backbone of the Suppocoin peer-to-peer network. You can [download Suppo Core](https://www.suppocoin.io/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for the Suppocoin digital currency and comprises the backbone of the Suppocoin peer-to-peer network. You can [download Suppo Core](https://www.suppocoin.io/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
