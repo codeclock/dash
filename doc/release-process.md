@@ -17,7 +17,7 @@ Check out the source code in the following directory hierarchy.
 
 ### Suppo Core maintainers/release engineers, update (commit) version in sources
 
-	pushd ./suppo
+	pushd ./sc
 	contrib/verifysfbinaries/verify.sh
 	configure.ac
 	doc/README*
@@ -40,7 +40,7 @@ Check out the source code in the following directory hierarchy.
 
  Setup Gitian descriptors:
 
-	pushd ./suppo
+	pushd ./sc
 	export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
 	export VERSION=(new version, e.g. 0.8.0)
 	git fetch
@@ -76,7 +76,7 @@ Check out the source code in the following directory hierarchy.
 
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
-	make -C ../suppo/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../sc/depends download SOURCES_PATH=`pwd`/cache/common
 
 Only missing files will be fetched, so this is safe to re-run for each build.
 
@@ -89,33 +89,33 @@ The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 ### Build and sign Suppo Core for Linux, Windows, and OS X:
 
 	./bin/gbuild --commit sc=v${VERSION} ../sc/contrib/gitian-descriptors/gitian-linux.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../suppo/contrib/gitian-descriptors/gitian-linux.yml
-	mv build/out/suppo-*.tar.gz build/out/src/suppo-*.tar.gz ../
+	./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../sc/contrib/gitian-descriptors/gitian-linux.yml
+	mv build/out/suppocore-*.tar.gz build/out/src/suppocore-*.tar.gz ../
 
 	./bin/gbuild --commit sc=v${VERSION} ../sc/contrib/gitian-descriptors/gitian-win.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../suppo/contrib/gitian-descriptors/gitian-win.yml
-	mv build/out/suppo-*-win-unsigned.tar.gz inputs/suppo-win-unsigned.tar.gz
-	mv build/out/suppo-*.zip build/out/suppo-*.exe ../
+	./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../sc/contrib/gitian-descriptors/gitian-win.yml
+	mv build/out/suppocore-*-win-unsigned.tar.gz inputs/suppocore-win-unsigned.tar.gz
+	mv build/out/suppocore-*.zip build/out/suppocore-*.exe ../
 
 	./bin/gbuild --commit sc=v${VERSION} ../sc/contrib/gitian-descriptors/gitian-osx.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../suppo/contrib/gitian-descriptors/gitian-osx.yml
-	mv build/out/suppo-*-osx-unsigned.tar.gz inputs/suppo-osx-unsigned.tar.gz
-	mv build/out/suppo-*.tar.gz build/out/suppo-*.dmg ../
+	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../sc/contrib/gitian-descriptors/gitian-osx.yml
+	mv build/out/suppocore-*-osx-unsigned.tar.gz inputs/suppo-osx-unsigned.tar.gz
+	mv build/out/suppocore-*.tar.gz build/out/suppocore-*.dmg ../
 	popd
 
   Build output expected:
 
-  1. source tarball (suppo-${VERSION}.tar.gz)
-  2. linux 32-bit and 64-bit dist tarballs (suppo-${VERSION}-linux[32|64].tar.gz)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (suppo-${VERSION}-win[32|64]-setup-unsigned.exe, suppo-${VERSION}-win[32|64].zip)
-  4. OS X unsigned installer and dist tarball (suppo-${VERSION}-osx-unsigned.dmg, suppo-${VERSION}-osx64.tar.gz)
+  1. source tarball (suppocore-${VERSION}.tar.gz)
+  2. linux 32-bit and 64-bit dist tarballs (suppocore-${VERSION}-linux[32|64].tar.gz)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (suppocore-${VERSION}-win[32|64]-setup-unsigned.exe, suppocore-${VERSION}-win[32|64].zip)
+  4. OS X unsigned installer and dist tarball (suppocore-${VERSION}-osx-unsigned.dmg, suppocore-${VERSION}-osx64.tar.gz)
   5. Gitian signatures (in gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
   Add other gitian builders keys to your gpg keyring
 
-	gpg --import ../suppo/contrib/gitian-downloader/*.pgp
+	gpg --import ../sc/contrib/gitian-downloader/*.pgp
 
   Verify the signatures
 
@@ -144,10 +144,10 @@ Commit your signature to gitian.sigs:
   Create (and optionally verify) the signed OS X binary:
 
 	pushd ./gitian-builder
-	./bin/gbuild -i --commit signature=v${VERSION} ../suppo/contrib/gitian-descriptors/gitian-osx-signer.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../suppo/contrib/gitian-descriptors/gitian-osx-signer.yml
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../suppo/contrib/gitian-descriptors/gitian-osx-signer.yml
-	mv build/out/suppo-osx-signed.dmg ../suppo-${VERSION}-osx.dmg
+	./bin/gbuild -i --commit signature=v${VERSION} ../sc/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../sc/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../sc/contrib/gitian-descriptors/gitian-osx-signer.yml
+	mv build/out/suppocore-osx-signed.dmg ../suppocore-${VERSION}-osx.dmg
 	popd
 
   Create (and optionally verify) the signed Windows binaries:

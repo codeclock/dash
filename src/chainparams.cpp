@@ -98,7 +98,7 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nPowKGWHeight = 15200;//will never activate
-        consensus.nPowDGWHeight = 9600;
+        consensus.nPowDGWHeight = 9500;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
@@ -134,7 +134,6 @@ public:
         pchMessageStart[3] = 0xbd;
         vAlertPubKey = ParseHex("040DFC93E79006DA20E0072A1884CD479355EFE1D087DA0119814D0BCAE82F6BAAA0AFA8AC9A6B012D885CC4A03A64AACBE3FC44E849367BDD1590C8A7290D7350");
         nDefaultPort = 7777;
-        nMaxTipAge = 6 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
 
@@ -247,7 +246,6 @@ public:
         pchMessageStart[3] = 0xff;
         vAlertPubKey = ParseHex("0465E995C59756A75720E25F174748AEE867D63FDD180D54D463A4CAC1213718F40DC67FC0D714910C4A704F323CF2C590300826FD123641E0315899A694CA69CE");
         nDefaultPort = 17777;
-        nMaxTipAge = 0x7fffffff; // allow mining on top of old blocks for testnet
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 1000;
 
@@ -331,8 +329,8 @@ public:
         consensus.nPowTargetSpacing = 2.5 * 60; // Suppo: 2.5 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
-        consensus.nPowKGWHeight = 15200; // same as mainnet
-        consensus.nPowDGWHeight = 34140; // same as mainnet
+        consensus.nPowKGWHeight = 15200;//will never activate same as mainnet
+        consensus.nPowDGWHeight = 9500;// same as mainnet
         consensus.nRuleChangeActivationThreshold = 108; // 75% for testchains
         consensus.nMinerConfirmationWindow = 144; // Faster than normal for regtest (144 instead of 2016)
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
@@ -355,7 +353,6 @@ public:
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xb7;
         pchMessageStart[3] = 0xdc;
-        nMaxTipAge = 6 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
         nDelayGetHeadersTime = 0; // never delay GETHEADERS in regtests
         nDefaultPort = 19994;
         nPruneAfterHeight = 1000;
