@@ -22,10 +22,10 @@ static const string strSecret1     ("7qh6LYnLN2w2ntz2wwUhRUEgkQ2j8XB16FGw77ZRDZm
 static const string strSecret2     ("7rve4MxeWFQHGbSYH6J2yaaZd3MBUqoDEwN6ZAZ6ZHmhTT4r3hW");
 static const string strSecret1C    ("XBuxZHH6TqXUuaSjbVTFR1DQSYecxCB9QA1Koyx5tTc3ddhqEnhm");
 static const string strSecret2C    ("XHMkZqWcY6Zkoq1j42NBijD8z5N5FtNy2Wx7WyAfXX2HZgxry8cr");
-static const CBitcoinAddress addr1 ("Sywgfc872nn5CKtpATCoAjZCc4v96pJczy");
-static const CBitcoinAddress addr2 ("SpmouUj9KKJ99ZuU331ZS1KqsboeFnLGgK");
-static const CBitcoinAddress addr1C("SxV9h4Xmv6Pup8tVAQmH97K6grzvDwMG9F");
-static const CBitcoinAddress addr2C("Sn7ZrYdExuk79Dm7CJCw7sfUWi2qWJSbRy");
+static const CBitcoinAddress addr1 ("SkYqsCFMoSkgZh5gqzses71yRWZsvBTYTA");
+static const CBitcoinAddress addr2 ("SbNy74rQ5yGkWw6LiagR8Nnch3TNyMGvd4");
+static const CBitcoinAddress addr1C("Sj6Jtef2gkNXBW5MqxS8qUmsWJeewfKuan");
+static const CBitcoinAddress addr2C("SYij48kVjZiiWawysqsnpF8FL9gaKpPNf9");
 
 
 static const string strAddressBad("Sta1praZQjyELweyMByXyiREw1ZRsjXzVP");
