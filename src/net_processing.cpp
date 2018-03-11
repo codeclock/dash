@@ -1165,6 +1165,15 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         if (!vRecv.empty()) {
             vRecv >> LIMITED_STRING(strSubVer, MAX_SUBVERSION_LENGTH);
         }
+        
+        if(strSubVer.find("OmegaCoin") != std::string::npos)
+        {
+            LogPrintf("disconnecting/banning incompatible %s peer=%d ; \n",strSubVer.c_str() , pfrom->id);
+            connman.Ban( pfrom->addr, BanReasonNodeMisbehaving);
+            pfrom->fDisconnect = true;
+            return true;
+        }
+
         if (!vRecv.empty()) {
             vRecv >> nStartingHeight;
         }
@@ -2227,7 +2236,7 @@ bool ProcessMessages(CNode* pfrom, CConnman& connman, std::atomic<bool>& interru
         CNetMessage& msg(msgs.front());
 
         msg.SetVersion(pfrom->GetRecvVersion());
-        // Scan for message start
+        // Scan for message start wo
         if (memcmp(msg.hdr.pchMessageStart, chainparams.MessageStart(), MESSAGE_START_SIZE) != 0) {
             LogPrintf("PROCESSMESSAGE: INVALID MESSAGESTART %s peer=%d\n", SanitizeString(msg.hdr.GetCommand()), pfrom->id);
             pfrom->fDisconnect = true;
