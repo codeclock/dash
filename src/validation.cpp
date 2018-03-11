@@ -1256,20 +1256,30 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
         nSubsidyBase = (11111.0 / (pow((dDiff+51.0)/6.0,2.0)));
         if(nSubsidyBase > 50) nSubsidyBase = 50;
         else if(nSubsidyBase < 25) nSubsidyBase = 25;
-    } else {
+    } else if (nPrevHeight < 51420) {
         // GPU/ASIC mining era
         // 2222222/(((x+2600)/9)^2)
         nSubsidyBase = (2222222.0 / (pow((dDiff+2600.0)/9.0,2.0)));
         if(nSubsidyBase > 25) nSubsidyBase = 25;
         else if(nSubsidyBase < 5) nSubsidyBase = 5;
     }
+    else if (nPrevHeight < 103260) {
+        nSubsidyBase = 12;
+    }
+    else if (nPrevHeight < 155100) {
+        nSubsidyBase = 10;
+    }
+    else if (nPrevHeight < 206940) {
+        nSubsidyBase = 8;
+    }
+    else nSubsidyBase = 6;
 
     // LogPrintf("height %u diff %4.2f reward %d\n", nPrevHeight, dDiff, nSubsidyBase);
     CAmount nSubsidy = nSubsidyBase * COIN;
 
-    // yearly decline of production by ~7.1% per year, projected ~18M coins max by year 2050+.
-    for (int i = consensusParams.nSubsidyHalvingInterval; i <= nPrevHeight; i += consensusParams.nSubsidyHalvingInterval) {
-        nSubsidy -= nSubsidy/14;
+    // yearly decline of production by ~13.1% per year, after about year 2
+    for (int i = 204060 + consensusParams.nSubsidyHalvingInterval; i <= nPrevHeight; i += consensusParams.nSubsidyHalvingInterval) {
+        nSubsidy -= nSubsidy/7.6;
     }
 
     // Hard fork to reduce the block reward by 10 extra percent (allowing budget/superblocks)
@@ -1282,19 +1292,21 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue)
 {
     CAmount ret = blockValue/5; // start at 20%
 
-    int nMNPIBlock = Params().GetConsensus().nMasternodePaymentsIncreaseBlock;
-    int nMNPIPeriod = Params().GetConsensus().nMasternodePaymentsIncreasePeriod;
+    const int nMNPIBlock = Params().GetConsensus().nMasternodePaymentsIncreaseBlock;
+    const int nMNPIPeriod = Params().GetConsensus().nMasternodePaymentsIncreasePeriod;//17280
 
                                                                       // mainnet:
     if(nHeight > nMNPIBlock)                  ret += blockValue / 20; // 10800 - 25.0%
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 1)) ret += blockValue / 20; // 30.0%
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 2)) ret += blockValue / 20; // 35.0%
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 3)) ret += blockValue / 40; // 37.5%
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 4)) ret += blockValue / 40; // 40.0%
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 5)) ret += blockValue / 40; // 42.5%
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 6)) ret += blockValue / 40; // 45.0%
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 7)) ret += blockValue / 40; // 47.5%
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 9)) ret += blockValue / 40; // 50.0%
+    if(nHeight > nMNPIBlock+(nMNPIPeriod* 1)) ret += blockValue / 20; // 28080 - 30.0%
+    if(nHeight > nMNPIBlock+(nMNPIPeriod* 2)) ret += blockValue / 20; // 45360 - 35.0%
+
+    const int nCHIBlock = nMNPIBlock+(nMNPIPeriod* 2) + 6048; //CommunityHappinessIncreaseBlock, should move this into consensus params
+    if(nHeight > nCHIBlock) ret += blockValue / 40; // 51408 - 37.5% 
+    if(nHeight > nCHIBlock + 2) ret += blockValue / 40; // 40.0%
+    if(nHeight > nCHIBlock + 4) ret += blockValue / 40; // 42.5%
+    if(nHeight > nCHIBlock + 6) ret += blockValue / 40; // 45.0%
+    if(nHeight > nCHIBlock + 8) ret += blockValue / 40; // 47.5%
+    if(nHeight > nCHIBlock + 10) ret += blockValue / 40; // 50.0%
 
     return ret;
 }
@@ -3495,6 +3507,7 @@ static bool IsSuperMajority(int minVersion, const CBlockIndex* pstart, unsigned 
 
 bool ProcessNewBlock(const CChainParams& chainparams, const CBlock* pblock, bool fForceProcessing, const CDiskBlockPos* dbp, bool *fNewBlock)
 {
+    LogPrintf("%s : STARTING\n", __func__);
     {
         LOCK(cs_main);
 
